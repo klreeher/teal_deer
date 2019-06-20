@@ -8,4 +8,5 @@ script:
   - |
     make init
     make html
+    make github
   
