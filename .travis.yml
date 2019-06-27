@@ -14,8 +14,8 @@ before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL 
-  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-  - git tag $TRAVIS_TAG  
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d_%H:%M:%S')-$(git log --format=%h -1)}
+  - git tag build-$TRAVIS_TAG  
 
 deploy:
   provider: releases
@@ -23,4 +23,3 @@ deploy:
   file_glob: true
   file: output/*
   skip_cleanup: true
-  draft: true
