@@ -28,3 +28,7 @@ notes
 -----
 
 `python3 pipenv shell`
+
+https://klreeher.github.io/teal_deer/
+
+WARNING: Feeds generated without SITEURL set properly may not be valid

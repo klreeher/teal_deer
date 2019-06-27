@@ -8,5 +8,12 @@ script:
   - |
     make init
     make html
-    make github
+#    make github
   
+deploy:
+  provider: releases
+  api_key: $GITHUB_ACCESS
+  file_glob: true
+  file: output/*
+  skip_cleanup: true
+  draft: true
