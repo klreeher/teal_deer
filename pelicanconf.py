@@ -27,7 +27,7 @@ LINKS = ()
         # ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/krp_mpls'),
+SOCIAL = (('twitter', 'https://twitter.com/krp_mpls'))
           #('', '#'),)
 
 DEFAULT_PAGINATION = 10
