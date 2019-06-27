@@ -22,3 +22,9 @@ todo
 - tests!
 - code quality gates
 - nice method for handling plugins
+
+
+notes
+-----
+
+`python3 pipenv shell`
