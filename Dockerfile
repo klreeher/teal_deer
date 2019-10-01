@@ -5,6 +5,4 @@ MAINTAINER K. L. Reeher
 
 COPY . /output
 
-RUN python -m http.server
-
 EXPOSE PORT=8000
