@@ -1,2 +1,12 @@
 pelican
 markdown
+pelican
+unidecode
+pytz
+python-dateutil
+pygments
+markdown
+markupsafe
+jinja2
+ghp-import
+beautifulsoup4
