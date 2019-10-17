@@ -16,7 +16,7 @@ DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'searc
 
 TIMEZONE = 'America/Chicago'
 
-THEME = 'themes/basic' #'../pelican-themes/basic'
+THEME = 'themes/elegant' #'../pelican-themes/basic'
 
 DEFAULT_LANG = u'en'
 
