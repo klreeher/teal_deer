@@ -8,7 +8,15 @@ SITEURL = ''
 
 PATH = 'content'
 
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ['tipue_search']
+
+# these are required for tipue
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
+
 TIMEZONE = 'America/Chicago'
+
+THEME = 'themes/basic' #'../pelican-themes/basic'
 
 DEFAULT_LANG = u'en'
 
