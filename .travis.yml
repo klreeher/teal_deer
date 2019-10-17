@@ -7,7 +7,7 @@ install: "make"
 script:
   - |
     make init
-    make html
+    make publish
 #    make github
 
 deploy:
