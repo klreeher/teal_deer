@@ -5,10 +5,9 @@ python:
 install: "make"
 # command to run tests
 script:
-  - |
-    make init
-    make html
-    make github
+  - make init
+  - make html
+  - make github
 
 before_deploy:
   # Set up git user name and tag this commit
@@ -22,4 +21,4 @@ deploy:
   file: output/*
   skip_cleanup: true
     on:
-    branch: master
+      branch: gh-pages
