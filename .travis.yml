@@ -12,9 +12,9 @@ script:
 
 deploy:
   provider: pages
-  api_key: $GITHUB_ACCESS
-  file_glob: true
-  file: output/*
+  github_token: $GITHUB_ACCESS
+  target_branch: gh-pages
+  local_dir: output
   skip_cleanup: true
   on:
-    branch: gh-pages
+    branch: master
