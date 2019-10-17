@@ -8,9 +8,6 @@ script:
   - |
     make init
     make html
-    pelican content -o output -s pelicanconf.py
-    ghp-import output
-    git push origin gh-pages
 #    make github
 
 before_deploy:
