@@ -1,8 +1,4 @@
 language: python
-
-services:
-  - docker
-
 python:
   - '3.5'
 # command to install dependencies
@@ -12,6 +8,18 @@ script:
   - |
     make init
     make html
+#    make github
 
-before_install:
-  - docker build -t kreeher/teal-deer .
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name $GIT_USERNAME
+  - git config --local user.email $GIT_EMAIL 
+  - export TRAVIS_TAG=build-${TRAVIS_TAG:-$(date +'%Y%m%d_%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG  
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_ACCESS
+  file_glob: true
+  file: output/*
+  skip_cleanup: true
