@@ -15,7 +15,7 @@ before_deploy:
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL 
   - export TRAVIS_TAG=build-${TRAVIS_TAG:-$(date +'%Y%m%d_%H%M%S')-$(git log --format=%h -1)}
-  - git tag $TRAVIS_TAG gh-pages
+  - git tag $TRAVIS_TAG  gh-pages
 
 deploy:
   provider: releases
