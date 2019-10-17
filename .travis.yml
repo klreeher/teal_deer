@@ -8,7 +8,7 @@ script:
   - |
     make init
     make html
-    make github
+#    make github
 
 deploy:
   provider: pages
