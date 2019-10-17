@@ -6,7 +6,6 @@ install: "make"
 # command to run tests
 script:
   - |
-    pip install -r requirements.txt
     make init
     make html
     pelican content -o output -s pelicanconf.py
