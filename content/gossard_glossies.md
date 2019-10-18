@@ -1,6 +1,7 @@
 ---
 title: Gossard Glossies
-author:
+author: kate
+status: draft
 tags: review, clothing
 date:
 ---
