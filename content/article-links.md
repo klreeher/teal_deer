@@ -5,6 +5,8 @@ summary: Link Demo
 keywords: design
 category: articles
 tags: demo
+series: Series Demo
+series_index: 1
 ---
 
 ## links to files

@@ -1,0 +1,3 @@
+[submodule "tipue-search"]
+	path = tipue-search
+	url = https://github.com/pelican-plugins/tipue-search.git

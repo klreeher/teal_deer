@@ -5,6 +5,8 @@ summary: Code Syntax Demo
 keywords: code
 category: articles
 tags: demo
+series: Series Demo
+series_index: 0
 ---
 
 ## Python Syntax Highlighting
