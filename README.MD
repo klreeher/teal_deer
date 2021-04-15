@@ -16,6 +16,11 @@ tl;dr.
 - travis ci build 
 - github pages deploy -- see at: 
 - pipenv
+
+### pipenv cheat sheet
+
+update: pipenv update --outdated
+https://pipenv-fork.readthedocs.io/en/latest/basics.html
   
 
 ## todo
