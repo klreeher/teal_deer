@@ -1,7 +1,6 @@
 ---
 title: Link Demo
 author: Anonymus
-date: 2021-04-15
 summary: Link Demo
 keywords: design
 category: articles

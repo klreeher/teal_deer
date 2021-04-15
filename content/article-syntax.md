@@ -1,7 +1,6 @@
 ---
 title: Syntax Highlight Demo
 author: Anonymus
-date: 2021-04-15
 summary: Code Syntax Demo
 keywords: code
 category: articles

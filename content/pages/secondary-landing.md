@@ -2,7 +2,6 @@
 author: kate
 title: Secondary Page
 layout: page
-date: 2019-01-14 7:30:47 +0100
 status: published
 ---
 

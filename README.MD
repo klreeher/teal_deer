@@ -46,6 +46,8 @@ reserved / default file metadata:
 	url: URL to use for this article/page
 ```
 
+> note: we have `DEFAULT_DATE = fs` in the [pelicanconf.py](pelicanconf.py) so it should take the file time if not specified in the article metadata
+
 other metadata for plugins:
   
 
