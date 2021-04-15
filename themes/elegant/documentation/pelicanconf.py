@@ -21,16 +21,15 @@ MARKDOWN = {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {"permalink": "true"},
+        "markdown.extensions.toc": {"permalink": " "},
     }
 }
 
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
-    "assets",
     "extract_toc",
-    "just_table",
     "liquid_tags.img",
+    "liquid_tags.include_code",
     "neighbors",
     "related_posts",
     "render_math",
@@ -78,7 +77,7 @@ SOCIAL = (
 )
 
 # Elegant theme
-STATIC_PATHS = ["theme/images", "images", "extra/_redirects"]
+STATIC_PATHS = ["theme/images", "images", "extra/_redirects", "code"]
 EXTRA_PATH_METADATA = {"extra/_redirects": {"path": "_redirects"}}
 
 if os.environ.get("CONTEXT") == "production":
@@ -113,7 +112,7 @@ TWITTER_USERNAME = ""
 FEATURED_IMAGE = SITEURL + "/theme/images/apple-touch-icon-152x152.png"
 
 # Legal
-SITE_LICENSE = """Content licensed under <a rel="license"
+SITE_LICENSE = """Content licensed under <a rel="license nofollow noopener noreferrer"
     href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
     Creative Commons Attribution 4.0 International License</a>."""
 HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
@@ -122,6 +121,10 @@ HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 SITE_DESCRIPTION = (
     "Documentation of Elegant, a theme for Pelican, originally created by Talha Mansoor"
 )
+
+# Share links at bottom of articles
+# Supported: twitter, facebook, hacker-news, reddit, linkedin, email
+SHARE_LINKS = [("twitter", "Twitter"), ("facebook", "Facebook"), ("email", "Email")]
 
 # Landing Page
 PROJECTS_TITLE = "Related Projects"
@@ -187,3 +190,4 @@ AUTHORS = {
 }
 DISQUS_FILTER = True
 UTTERANCES_FILTER = True
+COMMENTBOX_FILTER = True

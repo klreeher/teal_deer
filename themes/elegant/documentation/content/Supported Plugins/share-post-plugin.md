@@ -1,3 +1,4 @@
+---
 Title: Add Social Sharing Links
 Tags: pelican-theme, pelican-plugin, social-media
 Category: Supported Plugins
@@ -8,6 +9,7 @@ Subtitle:
 Summary: Elegant can be configured to provide Social Media sharing links for each of your articles. These links provide a simple way to share on various Social Media platforms while endeavoring to not track users in the process.
 Keywords: social networks, share posts,
 Authors: Talha Mansoor, Jack De Winter
+---
 
 No blog is complete without buttons or links that invites a reader to share your articles
 with the friend and colleagues on various social media sites. The problem with these buttons
@@ -33,6 +35,16 @@ configuration variable in your Pelican configuration.
 PLUGINS = ['share_post']
 ```
 
+Optionally, customize the list of networks where the article can be shared using `SHARE_LINKS`.
+
+```python
+SHARE_LINKS = [ ('twitter', 'Twitter'), ('facebook', 'Facebook'), ('email', 'Email') ]
+```
+
+The first item in each pair refers to a network recognized by `share_post`. Currently the list of supported networks includes `twitter`, `facebook`, `email`, `hacker-news`, `linkedin` and `reddit`. The second item in each pair is the text displayed for the link on the page.
+
+The sharing links are displayed in the order of `SHARE_LINKS`, therefore this variable can also be used to customize the link order.
+
 !!! note
 
     The [share_post plugin](https://github.com/getpelican/pelican-plugins/blob/master/share_post/README.md) requires the Python `beautifulsoup4` package to be installed.
@@ -51,7 +63,7 @@ Once the configuration for Sharing Media Links is enabled in the configuration f
 this feature to provide links for your readers to share your articles on social media is
 completed.
 
-The only effect any [metadata]({filename}../Advanced Features/meta-data.md) field will have
+The only effect any [metadata]({filename}../Advanced Features/metadata.md) field will have
 on Sharing Media links is to change the text to lead into the Social Media Sharing links.
 As documented above, the `SHARE_POST_INTRO` can be used to provide an alternate lead in text
 for the Social Media Sharing links. This text can be further overridden on an

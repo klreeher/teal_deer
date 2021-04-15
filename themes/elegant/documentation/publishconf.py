@@ -22,6 +22,7 @@ if os.environ.get("CONTEXT") == "production":
     STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_PROD")
     GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_PROD")
     DISQUS_SITENAME = os.environ.get("DISQUS_SITENAME")
+    COMMENTBOX_PROJECT = os.environ.get("COMMENTBOX_PROJECT")
 
 elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == "next":
     SITENAME = "Elegant (Next)"
@@ -32,13 +33,14 @@ elif os.environ.get("CONTEXT") == "branch-deploy" and os.environ.get("HEAD") == 
     STAT_COUNTER_PROJECT = os.environ.get("STAT_COUNTER_PROJECT_NEXT")
     STAT_COUNTER_SECURITY = os.environ.get("STAT_COUNTER_SECURITY_NEXT")
     GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS_NEXT")
+    COMMENTBOX_PROJECT = os.environ.get("COMMENTBOX_PROJECT")
 
 else:
     SITEURL = ""
 
 MAILCHIMP_FORM_ACTION = os.environ.get("MAILCHIMP_FORM_ACTION")
-UTTERANCES_REPO = "Pelican-Elegant/elegant"
-UTTERANCES_LABEL = "💬documentation-comments"
+UTTERANCES_REPO = os.environ.get("UTTERANCES_REPO")
+UTTERANCES_LABEL = os.environ.get("UTTERANCES_LABEL")
 
 RELATIVE_URLS = False
 # filetime_from_git is very slow. Use it in production only

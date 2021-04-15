@@ -11,19 +11,21 @@ DEFAULT_DATE = 'fs'
 
 PATH = 'content'
 
-PLUGINS= None
+#PLUGINS= None
 # tipue doesn't work with pip install for plugins ;_;
 #PLUGIN_PATHS = ["plugins"]
-#PLUGINS = ['tipue_search']
+PLUGINS = ['tipue_search']
+
+SEARCH_ON = False
 
 # these are required for tipue
-#DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search', '404']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search', '404']
 
 TIMEZONE = 'America/Chicago'
 
-THEME_STATIC_DIR = 'theme'
-#THEME = 'themes/elegant' #
-THEME= 'pelican-themes/storm'
+#THEME_STATIC_DIR = 'theme'
+THEME = 'themes/elegant' #
+#THEME= 'pelican-themes/storm'
 
 DEFAULT_LANG = u'en'
 
