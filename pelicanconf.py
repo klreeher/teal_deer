@@ -7,12 +7,14 @@ SITENAME = u'Teal Deer'
 SITEURL = ''
 SITE_DESCRIPTION = 'everything that\'s unfit to print'
 
-DEFAULT_DATE = 'fs'
+DEFAULT_DATE = 'fs' 
 
 PATH = 'content'
 
-PLUGIN_PATHS = ["plugins"]
-PLUGINS = ['tipue_search']
+#PLUGIN_PATHS = ["plugins"]
+#PLUGINS = ['tipue_search']
+
+PLUGINS = None
 
 # these are required for tipue
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search', '404']
