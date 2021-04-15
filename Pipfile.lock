@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "619c4cd4eed5a75e701b0dc75149828dfd76b61954297971683e754fe948c80b"
+            "sha256": "8b78fe42c35a270e9f19f73949fc8fcb6dfa0acb579427be59b49cb134eac3c1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -135,6 +135,14 @@
             "index": "pypi",
             "version": "==4.6.0"
         },
+        "pelican-series": {
+            "hashes": [
+                "sha256:91daeba30d51742955aecd0fba00f3d2bc6b107810fd852b263a361d5e2f9d8b",
+                "sha256:a73f0730587a460c3480848c774f7ea01bd4cb71f611e38d830e16119963690f"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
+        },
         "pygments": {
             "hashes": [
                 "sha256:2656e1a6edcdabf4275f9a3640db59fd5de107d88e8663c5d4e9a0fa62f77f94",
@@ -164,7 +172,7 @@
                 "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
                 "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.15.0"
         },
         "soupsieve": {
