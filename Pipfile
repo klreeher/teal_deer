@@ -15,6 +15,7 @@ Pygments = "*"
 MarkupSafe = "*"
 Jinja2 = "*"
 pelican-series = "*"
+pelican-albums = "*"
 
 [dev-packages]
 

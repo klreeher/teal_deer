@@ -19,12 +19,12 @@ PLUGINS= None
 SEARCH_ON = False
 
 # these are required for tipue
-DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', '404']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives']
 
 TIMEZONE = 'America/Chicago'
 
 #THEME_STATIC_DIR = 'theme'
-THEME = 'themes/elegant' #
+THEME = 'themes/basic' #
 #THEME= 'pelican-themes/storm'
 
 DEFAULT_LANG = u'en'

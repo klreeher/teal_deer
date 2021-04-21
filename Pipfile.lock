@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8b78fe42c35a270e9f19f73949fc8fcb6dfa0acb579427be59b49cb134eac3c1"
+            "sha256": "d1f92cd76bf3f20ae5061bfcbb80108d5a53575116b2041722a7e55bcb1e6147"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -134,6 +134,14 @@
             ],
             "index": "pypi",
             "version": "==4.6.0"
+        },
+        "pelican-albums": {
+            "hashes": [
+                "sha256:372065129b86a8d100ecd5b6276ca330d8b859f0c37a983da9d8cf0134a82de5",
+                "sha256:3c8fb3bfb587221d8a99744b58a794940d87c8e56d02e8aa608eba7b09a02451"
+            ],
+            "index": "pypi",
+            "version": "==0.6.1"
         },
         "pelican-series": {
             "hashes": [
